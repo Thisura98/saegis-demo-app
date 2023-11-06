@@ -7,6 +7,14 @@
 
 import Foundation
 
-enum TaskStatus: Int{
+enum TaskStatus: Int, CustomStringConvertible{
     case todo, inProgress, done
+    
+    var description: String{
+        switch(self){
+        case .todo: return "Todo"
+        case .inProgress: return "In progress"
+        case .done: return "Done"
+        }
+    }
 }

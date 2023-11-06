@@ -9,10 +9,14 @@ import UIKit
 
 class MainTableViewCell: BaseTableViewCell<MainItemViewModel> {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var dueDateLabel: UILabel!
+    
     override func setup(_ viewModel: MainItemViewModel) {
-        
-        // TODO
-        
+        titleLabel.text = viewModel.taskName
+        statusLabel.text = viewModel.status.description
+        dueDateLabel.text = viewModel.formattedDate()
     }
     
 }

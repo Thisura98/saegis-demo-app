@@ -9,6 +9,7 @@ import UIKit
 
 final class MainController: UIViewController {
 
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var tableView: UITableView!
     
     private let manager = TaskDataManager.getInstance()
@@ -32,9 +33,19 @@ final class MainController: UIViewController {
         tableView.dataSource = self
     }
     
+    private func setIsLoading(_ loading: Bool){
+        tableView.isHidden = loading
+        activityIndicator.isHidden = !loading
+        if (loading){
+            activityIndicator.startAnimating()
+        }
+    }
+    
     private func loadData() {
         Task{ 
+            setIsLoading(true)
             data = await manager.loadData()
+            setIsLoading(false)
             tableView.reloadData()
         }
     }
@@ -54,9 +65,6 @@ extension MainController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return MainTableViewCell.dequeue(from: tableView, data[indexPath.row])
     }
-    
-    
-    // TODO
     
 }
 

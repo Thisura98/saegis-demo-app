@@ -21,10 +21,15 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KmS-NJ-d5P">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="KmS-NJ-d5P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0hI-yl-c9b"/>
+                            <constraint firstItem="KmS-NJ-d5P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2h8-e7-QVB"/>
                             <constraint firstItem="FPq-HF-oad" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PHI-Dp-pJM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FPq-HF-oad" secondAttribute="trailing" id="XkU-Qc-z8J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPq-HF-oad" secondAttribute="bottom" id="XxY-uv-jg9"/>
@@ -33,6 +38,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bWp-oB-1ZM"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="KmS-NJ-d5P" id="eOM-0i-r0Y"/>
                         <outlet property="tableView" destination="FPq-HF-oad" id="tRD-nw-Uyb"/>
                     </connections>
                 </viewController>

@@ -17,4 +17,8 @@ class MainItemViewModel{
         dueDate = due
         status = taskStatus
     }
+    
+    func formattedDate() -> String{
+        return dueDate.description.components(separatedBy: " ")[0]
+    }
 }
