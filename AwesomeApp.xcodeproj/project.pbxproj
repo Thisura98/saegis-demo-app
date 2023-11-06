@@ -21,6 +21,9 @@
 		F5A6CC2B2AF9959C0086102B /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC2A2AF9959C0086102B /* BaseTableViewCell.swift */; };
 		F5A6CC2E2AF9970D0086102B /* MainItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC2D2AF9970D0086102B /* MainItemViewModel.swift */; };
 		F5A6CC312AF997450086102B /* TaskStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC302AF997450086102B /* TaskStatusEnum.swift */; };
+		F5A6CC362AF998610086102B /* TaskDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC352AF998610086102B /* TaskDataManager.swift */; };
+		F5A6CC382AF9987A0086102B /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC372AF9987A0086102B /* BaseManager.swift */; };
+		F5A6CC3B2AF999EB0086102B /* Task+SleepSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC3A2AF999EB0086102B /* Task+SleepSeconds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		F5A6CC2A2AF9959C0086102B /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		F5A6CC2D2AF9970D0086102B /* MainItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItemViewModel.swift; sourceTree = "<group>"; };
 		F5A6CC302AF997450086102B /* TaskStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatusEnum.swift; sourceTree = "<group>"; };
+		F5A6CC352AF998610086102B /* TaskDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataManager.swift; sourceTree = "<group>"; };
+		F5A6CC372AF9987A0086102B /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		F5A6CC3A2AF999EB0086102B /* Task+SleepSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+SleepSeconds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,8 @@
 		F5A6CBEE2AF980C40086102B /* AwesomeApp */ = {
 			isa = PBXGroup;
 			children = (
+				F5A6CC392AF999E10086102B /* Extensions */,
+				F5A6CC342AF998430086102B /* Managers */,
 				F5A6CC2F2AF9972D0086102B /* Domain */,
 				F5A6CC2C2AF996FC0086102B /* ViewModels */,
 				F5A6CC232AF995310086102B /* Views */,
@@ -196,6 +204,31 @@
 				F5A6CC302AF997450086102B /* TaskStatusEnum.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		F5A6CC342AF998430086102B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC3C2AF99A490086102B /* Abstract */,
+				F5A6CC352AF998610086102B /* TaskDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F5A6CC392AF999E10086102B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC3A2AF999EB0086102B /* Task+SleepSeconds.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5A6CC3C2AF99A490086102B /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC372AF9987A0086102B /* BaseManager.swift */,
+			);
+			path = Abstract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,9 +363,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A6CC382AF9987A0086102B /* BaseManager.swift in Sources */,
+				F5A6CC362AF998610086102B /* TaskDataManager.swift in Sources */,
 				F5A6CC2E2AF9970D0086102B /* MainItemViewModel.swift in Sources */,
 				F5A6CBF42AF980C40086102B /* MainController.swift in Sources */,
 				F5A6CBF02AF980C40086102B /* AppDelegate.swift in Sources */,
+				F5A6CC3B2AF999EB0086102B /* Task+SleepSeconds.swift in Sources */,
 				F5A6CC272AF9958B0086102B /* MainTableViewCell.swift in Sources */,
 				F5A6CC312AF997450086102B /* TaskStatusEnum.swift in Sources */,
 				F5A6CC2B2AF9959C0086102B /* BaseTableViewCell.swift in Sources */,

@@ -19,7 +19,7 @@ class BaseTableViewCell<TItemViewModel>: UITableViewCell where TItemViewModel: A
         tableView.register(nib, forCellReuseIdentifier: identifier)
     }
     
-    func dequeue(from tableView: UITableView, _ viewModel: TItemViewModel) -> UITableViewCell{
+    static func dequeue(from tableView: UITableView, _ viewModel: TItemViewModel) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: Self.identifier) as! BaseTableViewCell<TItemViewModel>
         cell.setup(viewModel)
         return cell
