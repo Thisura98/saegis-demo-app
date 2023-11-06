@@ -27,6 +27,8 @@
 		F5A6CC3F2AF99F020086102B /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = F5A6CC3E2AF99F020086102B /* tasks.json */; };
 		F5A6CC412AF99F1C0086102B /* TaskResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC402AF99F1C0086102B /* TaskResponse.swift */; };
 		F5A6CC432AF99F220086102B /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC422AF99F220086102B /* TaskItem.swift */; };
+		F5A6CC462AF9AB7E0086102B /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F5A6CC452AF9AB7E0086102B /* FirebaseCrashlytics */; };
+		F5A6CC482AF9AC550086102B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5A6CC472AF9AC550086102B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,7 @@
 		F5A6CC3E2AF99F020086102B /* tasks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
 		F5A6CC402AF99F1C0086102B /* TaskResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskResponse.swift; sourceTree = "<group>"; };
 		F5A6CC422AF99F220086102B /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		F5A6CC472AF9AC550086102B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A6CC462AF9AB7E0086102B /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +247,7 @@
 		F5A6CC3D2AF99ED30086102B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F5A6CC472AF9AC550086102B /* GoogleService-Info.plist */,
 				F5A6CC3E2AF99F020086102B /* tasks.json */,
 			);
 			path = Resources;
@@ -264,6 +269,9 @@
 			dependencies = (
 			);
 			name = AwesomeApp;
+			packageProductDependencies = (
+				F5A6CC452AF9AB7E0086102B /* FirebaseCrashlytics */,
+			);
 			productName = AwesomeApp;
 			productReference = F5A6CBEC2AF980C40086102B /* AwesomeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -336,6 +344,9 @@
 				Base,
 			);
 			mainGroup = F5A6CBE32AF980C30086102B;
+			packageReferences = (
+				F5A6CC442AF9AB7E0086102B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F5A6CBED2AF980C40086102B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -357,6 +368,7 @@
 				F5A6CC282AF9958B0086102B /* MainTableViewCell.xib in Resources */,
 				F5A6CBF72AF980C40086102B /* Main.storyboard in Resources */,
 				F5A6CC3F2AF99F020086102B /* tasks.json in Resources */,
+				F5A6CC482AF9AC550086102B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +753,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5A6CC442AF9AB7E0086102B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5A6CC452AF9AB7E0086102B /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5A6CC442AF9AB7E0086102B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5A6CBE42AF980C30086102B /* Project object */;
 }
