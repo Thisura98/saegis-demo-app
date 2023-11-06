@@ -24,6 +24,9 @@
 		F5A6CC362AF998610086102B /* TaskDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC352AF998610086102B /* TaskDataManager.swift */; };
 		F5A6CC382AF9987A0086102B /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC372AF9987A0086102B /* BaseManager.swift */; };
 		F5A6CC3B2AF999EB0086102B /* Task+SleepSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC3A2AF999EB0086102B /* Task+SleepSeconds.swift */; };
+		F5A6CC3F2AF99F020086102B /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = F5A6CC3E2AF99F020086102B /* tasks.json */; };
+		F5A6CC412AF99F1C0086102B /* TaskResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC402AF99F1C0086102B /* TaskResponse.swift */; };
+		F5A6CC432AF99F220086102B /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC422AF99F220086102B /* TaskItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		F5A6CC352AF998610086102B /* TaskDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataManager.swift; sourceTree = "<group>"; };
 		F5A6CC372AF9987A0086102B /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
 		F5A6CC3A2AF999EB0086102B /* Task+SleepSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+SleepSeconds.swift"; sourceTree = "<group>"; };
+		F5A6CC3E2AF99F020086102B /* tasks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
+		F5A6CC402AF99F1C0086102B /* TaskResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskResponse.swift; sourceTree = "<group>"; };
+		F5A6CC422AF99F220086102B /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		F5A6CBEE2AF980C40086102B /* AwesomeApp */ = {
 			isa = PBXGroup;
 			children = (
+				F5A6CC3D2AF99ED30086102B /* Resources */,
 				F5A6CC392AF999E10086102B /* Extensions */,
 				F5A6CC342AF998430086102B /* Managers */,
 				F5A6CC2F2AF9972D0086102B /* Domain */,
@@ -202,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				F5A6CC302AF997450086102B /* TaskStatusEnum.swift */,
+				F5A6CC402AF99F1C0086102B /* TaskResponse.swift */,
+				F5A6CC422AF99F220086102B /* TaskItem.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -229,6 +238,14 @@
 				F5A6CC372AF9987A0086102B /* BaseManager.swift */,
 			);
 			path = Abstract;
+			sourceTree = "<group>";
+		};
+		F5A6CC3D2AF99ED30086102B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC3E2AF99F020086102B /* tasks.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +356,7 @@
 				F5A6CBF92AF980C50086102B /* Assets.xcassets in Resources */,
 				F5A6CC282AF9958B0086102B /* MainTableViewCell.xib in Resources */,
 				F5A6CBF72AF980C40086102B /* Main.storyboard in Resources */,
+				F5A6CC3F2AF99F020086102B /* tasks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +387,8 @@
 				F5A6CBF42AF980C40086102B /* MainController.swift in Sources */,
 				F5A6CBF02AF980C40086102B /* AppDelegate.swift in Sources */,
 				F5A6CC3B2AF999EB0086102B /* Task+SleepSeconds.swift in Sources */,
+				F5A6CC412AF99F1C0086102B /* TaskResponse.swift in Sources */,
+				F5A6CC432AF99F220086102B /* TaskItem.swift in Sources */,
 				F5A6CC272AF9958B0086102B /* MainTableViewCell.swift in Sources */,
 				F5A6CC312AF997450086102B /* TaskStatusEnum.swift in Sources */,
 				F5A6CC2B2AF9959C0086102B /* BaseTableViewCell.swift in Sources */,

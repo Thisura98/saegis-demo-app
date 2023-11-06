@@ -1,0 +1,60 @@
+{
+    "tasks": [
+        {
+            "title": "Read employee handbook",
+            "dueDate": "2023-10-02T23:59:59Z"
+        },
+        {
+            "title": "Talk with team mates",
+            "dueDate": "2023-10-03T23:59:59Z"
+        },
+        {
+            "title": "Participate in a Fireside chat",
+            "dueDate": "2023-10-04T23:59:59Z"
+        },
+        {
+            "title": "Complete HR Forms",
+            "dueDate": "2023-10-05T23:59:59Z"
+        },
+        {
+            "title": "Finish setting up Laptop",
+            "dueDate": "2023-10-06T23:59:59Z"
+        },
+        {
+            "title": "Register mobile devices with company portal",
+            "dueDate": "2023-10-09T23:59:59Z"
+        },
+        {
+            "title": "Register fingerprints in company security system",
+            "dueDate": "2023-10-10T23:59:59Z"
+        },
+        {
+            "title": "Finish modern slavery act awareness training",
+            "dueDate": "2023-10-11T23:59:59Z"
+        },
+        {
+            "title": "Meet and greet with overseas team mates",
+            "dueDate": "2023-10-12T23:59:59Z"
+        },
+        {
+            "title": "Setup Visual Studio",
+            "dueDate": "2023-10-13T17:00:00Z"
+        },
+        {
+            "title": "Complete branching stratergy training",
+            "dueDate": "2023-10-16T17:00:00Z"
+        },
+        {
+            "title": "Complete Jira process training",
+            "dueDate": "2023-10-17T17:00:00Z"
+        },
+        {
+            "title": "Complete Jira process training",
+            "dueDate": "2023-10-18T17:00:00Z"
+        },
+        {
+            "title": "Complete Jira process training",
+            "dueDate": "2023-10-19T17:00:00Z"
+        }
+    ]
+}
