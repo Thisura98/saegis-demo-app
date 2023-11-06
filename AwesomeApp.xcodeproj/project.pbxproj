@@ -9,13 +9,24 @@
 /* Begin PBXBuildFile section */
 		F5A6CBF02AF980C40086102B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CBEF2AF980C40086102B /* AppDelegate.swift */; };
 		F5A6CBF22AF980C40086102B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CBF12AF980C40086102B /* SceneDelegate.swift */; };
-		F5A6CBF42AF980C40086102B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CBF32AF980C40086102B /* ViewController.swift */; };
+		F5A6CBF42AF980C40086102B /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CBF32AF980C40086102B /* MainController.swift */; };
 		F5A6CBF72AF980C40086102B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A6CBF52AF980C40086102B /* Main.storyboard */; };
 		F5A6CBF92AF980C50086102B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A6CBF82AF980C50086102B /* Assets.xcassets */; };
 		F5A6CBFC2AF980C50086102B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A6CBFA2AF980C50086102B /* LaunchScreen.storyboard */; };
 		F5A6CC072AF980C60086102B /* AwesomeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC062AF980C60086102B /* AwesomeAppTests.swift */; };
 		F5A6CC112AF980C60086102B /* AwesomeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC102AF980C60086102B /* AwesomeAppUITests.swift */; };
 		F5A6CC132AF980C60086102B /* AwesomeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC122AF980C60086102B /* AwesomeAppUITestsLaunchTests.swift */; };
+		F5A6CC272AF9958B0086102B /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC252AF9958B0086102B /* MainTableViewCell.swift */; };
+		F5A6CC282AF9958B0086102B /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A6CC262AF9958B0086102B /* MainTableViewCell.xib */; };
+		F5A6CC2B2AF9959C0086102B /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC2A2AF9959C0086102B /* BaseTableViewCell.swift */; };
+		F5A6CC2E2AF9970D0086102B /* MainItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC2D2AF9970D0086102B /* MainItemViewModel.swift */; };
+		F5A6CC312AF997450086102B /* TaskStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC302AF997450086102B /* TaskStatusEnum.swift */; };
+		F5A6CC362AF998610086102B /* TaskDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC352AF998610086102B /* TaskDataManager.swift */; };
+		F5A6CC382AF9987A0086102B /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC372AF9987A0086102B /* BaseManager.swift */; };
+		F5A6CC3B2AF999EB0086102B /* Task+SleepSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC3A2AF999EB0086102B /* Task+SleepSeconds.swift */; };
+		F5A6CC3F2AF99F020086102B /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = F5A6CC3E2AF99F020086102B /* tasks.json */; };
+		F5A6CC412AF99F1C0086102B /* TaskResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC402AF99F1C0086102B /* TaskResponse.swift */; };
+		F5A6CC432AF99F220086102B /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A6CC422AF99F220086102B /* TaskItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +50,7 @@
 		F5A6CBEC2AF980C40086102B /* AwesomeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A6CBEF2AF980C40086102B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5A6CBF12AF980C40086102B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5A6CBF32AF980C40086102B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5A6CBF32AF980C40086102B /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		F5A6CBF62AF980C40086102B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5A6CBF82AF980C50086102B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A6CBFB2AF980C50086102B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,17 @@
 		F5A6CC0C2AF980C60086102B /* AwesomeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A6CC102AF980C60086102B /* AwesomeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeAppUITests.swift; sourceTree = "<group>"; };
 		F5A6CC122AF980C60086102B /* AwesomeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5A6CC252AF9958B0086102B /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		F5A6CC262AF9958B0086102B /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		F5A6CC2A2AF9959C0086102B /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		F5A6CC2D2AF9970D0086102B /* MainItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItemViewModel.swift; sourceTree = "<group>"; };
+		F5A6CC302AF997450086102B /* TaskStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatusEnum.swift; sourceTree = "<group>"; };
+		F5A6CC352AF998610086102B /* TaskDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataManager.swift; sourceTree = "<group>"; };
+		F5A6CC372AF9987A0086102B /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		F5A6CC3A2AF999EB0086102B /* Task+SleepSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+SleepSeconds.swift"; sourceTree = "<group>"; };
+		F5A6CC3E2AF99F020086102B /* tasks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
+		F5A6CC402AF99F1C0086102B /* TaskResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskResponse.swift; sourceTree = "<group>"; };
+		F5A6CC422AF99F220086102B /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +121,15 @@
 		F5A6CBEE2AF980C40086102B /* AwesomeApp */ = {
 			isa = PBXGroup;
 			children = (
+				F5A6CC3D2AF99ED30086102B /* Resources */,
+				F5A6CC392AF999E10086102B /* Extensions */,
+				F5A6CC342AF998430086102B /* Managers */,
+				F5A6CC2F2AF9972D0086102B /* Domain */,
+				F5A6CC2C2AF996FC0086102B /* ViewModels */,
+				F5A6CC232AF995310086102B /* Views */,
+				F5A6CC202AF994CE0086102B /* Controllers */,
 				F5A6CBEF2AF980C40086102B /* AppDelegate.swift */,
 				F5A6CBF12AF980C40086102B /* SceneDelegate.swift */,
-				F5A6CBF32AF980C40086102B /* ViewController.swift */,
-				F5A6CBF52AF980C40086102B /* Main.storyboard */,
 				F5A6CBF82AF980C50086102B /* Assets.xcassets */,
 				F5A6CBFA2AF980C50086102B /* LaunchScreen.storyboard */,
 				F5A6CBFD2AF980C50086102B /* Info.plist */,
@@ -125,6 +152,100 @@
 				F5A6CC122AF980C60086102B /* AwesomeAppUITestsLaunchTests.swift */,
 			);
 			path = AwesomeAppUITests;
+			sourceTree = "<group>";
+		};
+		F5A6CC202AF994CE0086102B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC222AF994E40086102B /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F5A6CC222AF994E40086102B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CBF52AF980C40086102B /* Main.storyboard */,
+				F5A6CBF32AF980C40086102B /* MainController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F5A6CC232AF995310086102B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC292AF995910086102B /* Abstract */,
+				F5A6CC242AF995360086102B /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5A6CC242AF995360086102B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC252AF9958B0086102B /* MainTableViewCell.swift */,
+				F5A6CC262AF9958B0086102B /* MainTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F5A6CC292AF995910086102B /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC2A2AF9959C0086102B /* BaseTableViewCell.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		F5A6CC2C2AF996FC0086102B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC2D2AF9970D0086102B /* MainItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F5A6CC2F2AF9972D0086102B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC302AF997450086102B /* TaskStatusEnum.swift */,
+				F5A6CC402AF99F1C0086102B /* TaskResponse.swift */,
+				F5A6CC422AF99F220086102B /* TaskItem.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F5A6CC342AF998430086102B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC3C2AF99A490086102B /* Abstract */,
+				F5A6CC352AF998610086102B /* TaskDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F5A6CC392AF999E10086102B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC3A2AF999EB0086102B /* Task+SleepSeconds.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5A6CC3C2AF99A490086102B /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC372AF9987A0086102B /* BaseManager.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		F5A6CC3D2AF99ED30086102B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5A6CC3E2AF99F020086102B /* tasks.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +354,9 @@
 			files = (
 				F5A6CBFC2AF980C50086102B /* LaunchScreen.storyboard in Resources */,
 				F5A6CBF92AF980C50086102B /* Assets.xcassets in Resources */,
+				F5A6CC282AF9958B0086102B /* MainTableViewCell.xib in Resources */,
 				F5A6CBF72AF980C40086102B /* Main.storyboard in Resources */,
+				F5A6CC3F2AF99F020086102B /* tasks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +381,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A6CBF42AF980C40086102B /* ViewController.swift in Sources */,
+				F5A6CC382AF9987A0086102B /* BaseManager.swift in Sources */,
+				F5A6CC362AF998610086102B /* TaskDataManager.swift in Sources */,
+				F5A6CC2E2AF9970D0086102B /* MainItemViewModel.swift in Sources */,
+				F5A6CBF42AF980C40086102B /* MainController.swift in Sources */,
 				F5A6CBF02AF980C40086102B /* AppDelegate.swift in Sources */,
+				F5A6CC3B2AF999EB0086102B /* Task+SleepSeconds.swift in Sources */,
+				F5A6CC412AF99F1C0086102B /* TaskResponse.swift in Sources */,
+				F5A6CC432AF99F220086102B /* TaskItem.swift in Sources */,
+				F5A6CC272AF9958B0086102B /* MainTableViewCell.swift in Sources */,
+				F5A6CC312AF997450086102B /* TaskStatusEnum.swift in Sources */,
+				F5A6CC2B2AF9959C0086102B /* BaseTableViewCell.swift in Sources */,
 				F5A6CBF22AF980C40086102B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
