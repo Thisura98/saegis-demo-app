@@ -31,16 +31,16 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acr-ta-mTF">
-                        <rect key="frame" x="20" y="65" width="56" height="22"/>
+                        <rect key="frame" x="20" y="65" width="67.333333333333329" height="28"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhT-3i-NNj">
-                                <rect key="frame" x="8" y="2" width="40" height="18"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="8.0000000000000036" y="2" width="51.333333333333343" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.45999991890000003" blue="0.88999998570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.84313725490000002" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xhT-3i-NNj" firstAttribute="leading" secondItem="acr-ta-mTF" secondAttribute="leading" constant="8" id="h1f-Tp-WoJ"/>
                             <constraint firstItem="xhT-3i-NNj" firstAttribute="centerX" secondItem="acr-ta-mTF" secondAttribute="centerX" id="iUF-7B-K3C"/>
@@ -49,7 +49,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re0-oM-Fjk">
-                        <rect key="frame" x="84" y="67.666666666666671" width="267" height="17"/>
+                        <rect key="frame" x="95.333333333333329" y="70.666666666666671" width="255.66666666666669" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
