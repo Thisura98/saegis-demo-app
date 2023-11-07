@@ -21,6 +21,18 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVn-5M-HM9">
+                                <rect key="frame" x="161" y="704" width="202" height="64"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="30" minY="8" maxX="30" maxY="8"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="CRASH!"/>
+                                <connections>
+                                    <action selector="crashButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C9r-wN-PRe"/>
+                                </connections>
+                            </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KmS-NJ-d5P">
                                 <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
                             </activityIndicatorView>
@@ -30,15 +42,18 @@
                         <constraints>
                             <constraint firstItem="KmS-NJ-d5P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0hI-yl-c9b"/>
                             <constraint firstItem="KmS-NJ-d5P" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2h8-e7-QVB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RVn-5M-HM9" secondAttribute="trailing" constant="30" id="7oq-xc-LMz"/>
                             <constraint firstItem="FPq-HF-oad" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PHI-Dp-pJM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FPq-HF-oad" secondAttribute="trailing" id="XkU-Qc-z8J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPq-HF-oad" secondAttribute="bottom" id="XxY-uv-jg9"/>
                             <constraint firstItem="FPq-HF-oad" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jhI-aK-IYc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RVn-5M-HM9" secondAttribute="bottom" constant="50" id="tvr-C9-GVr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bWp-oB-1ZM"/>
                     <connections>
                         <outlet property="activityIndicator" destination="KmS-NJ-d5P" id="eOM-0i-r0Y"/>
+                        <outlet property="crashButton" destination="RVn-5M-HM9" id="12s-Nh-yju"/>
                         <outlet property="tableView" destination="FPq-HF-oad" id="tRD-nw-Uyb"/>
                     </connections>
                 </viewController>

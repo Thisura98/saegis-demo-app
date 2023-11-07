@@ -11,6 +11,7 @@ final class MainController: UIViewController {
 
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var crashButton: UIButton!
     
     private let manager = TaskDataManager.getInstance()
     private var data = [MainItemViewModel].init()
@@ -21,8 +22,13 @@ final class MainController: UIViewController {
         navigationItem.title = "Awesome App"
         navigationController!.navigationBar.prefersLargeTitles = true
         
+        setStyles()
         setupTableView()
         loadData()
+    }
+    
+    private func setStyles(){
+        crashButton.layer.cornerRadius = 12
     }
 
     private func setupTableView(){
@@ -50,6 +56,10 @@ final class MainController: UIViewController {
         }
     }
 
+    @IBAction func crashButtonTapped(_ sender: Any) {
+        // The following logic will crash the app
+        [0, 1, 2][3]
+    }
 }
 
 extension MainController: UITableViewDelegate, UITableViewDataSource{
